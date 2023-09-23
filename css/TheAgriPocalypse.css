@@ -434,3 +434,50 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     margin-top: 20px;
     position: fixed;
 }
+.page6{
+    height: 6540px;
+    background-image: url("../img/page6/pg6background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1475px 6540px;
+    margin: 0px !important;
+    font-size: 28px;
+    text-align: center;
+}
+.pg6-content1{
+    height: 1090px;
+}
+
+.pg6-content2{
+    height: 1090px;
+}
+.pg6-content3{
+    height: 1090px;
+    text-align: center;
+}
+#pg6_act3{
+    max-width: 20%;
+    max-height: 10%;
+}
+.pg6-content4{
+    height: 1090px;
+}
+.pg6-content5{
+    height: 1090px;
+}
+
+#pg6panel1, #pg6panel2{
+    max-width: 100%;
+}
+.pg6-content6{
+    height: 1090px;
+}
+#pg6panel3{
+    max-width: 40%;
+    float: right;
+}
+
+#pg6nextbutton{
+    cursor: pointer;
+    width: 200px;
+}
