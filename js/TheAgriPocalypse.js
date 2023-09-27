@@ -9,6 +9,7 @@ jQuery(document).ready(function($){
     $('#column-dialogue1').hide();
     $('#column-dialogue2').hide();
     $('.sentences2').hide();
+    $('.pg7-sentences2').hide();
     $('.page5-dialogue2').hide();
 
     $('.pg-content3-colum2').on('click', function(){
@@ -22,6 +23,12 @@ jQuery(document).ready(function($){
       $('.sentences1').hide();
       $('.sentences2').show();
       $('#column-dialogue2').show()
+    })
+    $('#pg7-scarcydialoguebox-btn').on('click', function(){
+      $(this).css('top', '68.5%');
+      $('.pg7-sentences1').hide();
+      $('.pg7-sentences2').show();
+      $('#pg7-column-dialogue2').show()
     })
     
     $('#dialogue2A').on('click', function(){

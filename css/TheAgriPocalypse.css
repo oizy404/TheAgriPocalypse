@@ -439,38 +439,64 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     background-image: url("../img/page6/pg6background.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1475px 6540px;
+    background-size: 2107px 6540px;
     margin: 0px !important;
     font-size: 28px;
     text-align: center;
 }
 .pg6-content1{
     height: 1090px;
+    border-bottom: 2px solid aqua;
 }
-
+.pg6-content1-inner{
+    display: block;
+    padding: 100px 0px;
+}
 .pg6-content2{
     height: 1090px;
+    border-bottom: 2px solid aqua;
 }
 .pg6-content3{
     height: 1090px;
     text-align: center;
+    border-bottom: 2px solid aqua;
 }
 #pg6_act3{
     max-width: 20%;
     max-height: 10%;
+    display: block;
+    margin: auto;
 }
 .pg6-content4{
     height: 1090px;
+    border-bottom: 2px solid aqua;
+}
+.pg6-content4-inner{
+    display: block;
+    padding: 100px 0px;
 }
 .pg6-content5{
     height: 1090px;
+    border-bottom: 2px solid aqua;
 }
-
+.pg6-content5-inner{
+    display: block;
+    margin: auto 0px;
+}
+#pg6panel2-text, #pg6panel1-text {
+    display: block;
+    margin: auto 0px;
+}
 #pg6panel1, #pg6panel2{
     max-width: 100%;
 }
 .pg6-content6{
     height: 1090px;
+    border-bottom: 2px solid aqua;
+}
+.pg6-content6-inner{
+    display: block;
+    margin: auto 0px;
 }
 #pg6panel3{
     max-width: 40%;
@@ -480,4 +506,124 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 #pg6nextbutton{
     cursor: pointer;
     width: 200px;
+}
+
+.page7{
+	background-attachment: fixed;
+    height: 1090px;
+    background-image: url("../img/page2/pg2bganimation.gif");
+    background-size: cover;
+    /* position: fixed; */
+} 
+.page7-content{
+	background-attachment: fixed;
+    background-image: url("../img/page2/pg2plantanimation.gif");
+    height: 1090px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0px;
+}
+.pg-content7-colum1{
+  position: relative;
+}
+.pg-content7-colum2{
+  cursor: pointer;
+}
+.pg7-sentences1{
+    position: absolute;
+    top: 60%;
+    left: 19%;
+    transform: translate(30%, -70%);
+    -ms-transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 23px;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 5px;
+    width: 810px;
+}
+.pg7-sentences2{
+    position: absolute;
+    top: 58%;
+    left: 19%;
+    transform: translate(30%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 23px;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 5px;
+    width: 810px;
+}
+#pg7-scarcydialoguebox-btn{
+    position: absolute;
+    top: 69%;
+    right: 8%;
+    transform: translate(-50%, -100%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: #7f855d; */
+    color: white;
+    font-size: 16px;
+    padding: 12px 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+#pg7-exitbutton-btn{
+    position: absolute;
+    top: 69%;
+    right: 8%;
+    transform: translate(-170%, -535%);
+    -ms-transform: translate(-50%, -50%);
+}
+.page8{
+	background-attachment: fixed;
+    height: 1090px;
+    background-image: url("../img/page8/InsidePlants.gif");
+    background-size: cover;
+    /* position: fixed; */
+} 
+.page8-content{
+	background-attachment: fixed;
+    background-image: url("../img/page8/Front_plants_2.gif");
+    height: 1090px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0px;
+}
+
+.characters-col1, 
+.characters-col2, 
+.characters-col3, 
+.characters-col4, 
+.characters-col5{
+    display: block;
+    margin: auto 0px;
+}
+
+img#story1, 
+img#story2, 
+img#story3,
+img#story5,
+img#story5,
+img#story6,
+img#story7,
+img#story8
+{
+    cursor: pointer;  
+}
+img#story1:hover, 
+img#story2:hover, 
+img#story3:hover,
+img#story4:hover,
+img#story5:hover,
+img#story6:hover,
+img#story7:hover,
+img#story8:hover{
+    transform: scale(1.1);   
+}
+.young-info{
+    text-align: left;
+    font-size: 22px;
 }
