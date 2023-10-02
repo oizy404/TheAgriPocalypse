@@ -19,11 +19,62 @@ body, html{
     padding-right: 0px !important;
     padding-left: 0px !important;
 }
-.parallax {
+/* .parallax {
     display: block;
     overflow: hidden;
     width: 100%;
     background-repeat: no-repeat;
+} */
+
+.navigation{
+    height: 100%;
+    z-index: 99999;
+    position: fixed;
+}
+.acts{
+    height: 90%;
+}
+.nav-btns{
+    height: 10%;
+}
+.acts-img{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+#act1-nav-btn,
+#act2-nav-btn,
+#yfc-nav-btn,
+#stories-nav-btn,
+#act3-nav-btn,
+#present-nav-btn
+{
+    margin-top: 20px;
+    width: 40%;
+}
+#nocheck{
+    width: 15%;
+}
+#sound-text{
+    width: 25%;
+    margin-top: 10px;
+}
+.sound-div{
+    display: inline-flex;
+    margin: auto 0;
+}
+.front-pg{
+	background-attachment: fixed;
+	height: 1895%;
+    background-image: url("../img/loading_page/LoadingPage.gif");
+    background-size: cover;
+    position: fixed;
+} 
+.front-pg-cont{
+    margin: auto 0;
+}
+#clicktostart{
+    cursor: pointer;
 }
 .page1{
     height: 3110px;
@@ -150,7 +201,7 @@ img#scarcydialoguebox {
 }
 .page2{
 	background-attachment: fixed;
-    height: 1090px;
+	height: 143.7%;
     background-image: url("../img/page2/pg2bganimation.gif");
     background-size: cover;
     position: fixed;
@@ -158,20 +209,13 @@ img#scarcydialoguebox {
 .page2-content{
 	background-attachment: fixed;
     background-image: url("../img/page2/pg2plantanimation.gif");
-    height: 1090px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 0px;
 }
-.pg2-content1{
-    height: 545px;
-}
 #pg2dialogue{
     margin-top: 100px;
     margin-left: 200px;
-}
-.pg2-content2{
-    height: 545px;
 }
 #pg2nextbutton {
     float: right;
@@ -205,6 +249,19 @@ img#scarcydialoguebox {
     background-image: url("../img/page3/pg3leavesanimation.gif");
     background-size: cover;
 }
+.pg3-content7-text2{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+#pg3_scarcydialogue{
+    width: 250px;
+    z-index: 3;
+    position: relative;
+    bottom: 500px;
+    float: right;
+    right: -180px
+}
 #pg3_scarcy{
     width: 500px;
     z-index: 2;
@@ -226,16 +283,39 @@ img#scarcydialoguebox {
 #pg3_panel2A{
     width: 360px
 }
+#pg3_panel3dialogue{
+    z-index: 2;
+    position:relative;
+    width: 20%;
+    left: 80px;
+    top: 100px;
+}
 #pg3_panel3{
-    width: 1000px;
+    z-index: 1;
+    position:relative
 }
 #pg3_panel4{
     width: 700px;
 }
-#pg3_panel5{
+#pg3_panel5dialogue{
+    position: relative;
     width: 1200px;
+    z-index: 2;
+}
+#pg3_panel5{
+    position: relative;
+    width: 1200px;
+    z-index: 1;
+}
+#pg3_panel6overlay{
+    width: 500px;
+    z-index: 10;
+    position: relative;
+    left:0px;
 }
 #pg3_panel6{
+    z-index: 1;
+    position: relative;
     width: 800px;
 }
 #pg3_panel7{
@@ -370,7 +450,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 }
 .page5-dialogue1 {
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-45%, 90%);
     font-size: 25px;
@@ -378,7 +458,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 }
 .page5-dialogue2 {
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-36%, 95%);
     font-size: 25px;
@@ -397,6 +477,32 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     bottom: 2%;
     width: 100%;
 }
+
+#pg5-scarcydialoguebox-btn{
+    position: absolute;
+    top: 78%;
+    right: 12%;
+    transform: translate(-50%, -100%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: #7f855d; */
+    color: white;
+    font-size: 16px;
+    padding: 12px 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: 7%;
+}
+#pg5-exitbutton-btn{
+    position: absolute;
+    top: 79%;
+    right: 8%;
+    transform: translate(-170%, -535%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
 .page5-carousel-content{
     text-align: center;
     position: absolute;
@@ -421,6 +527,11 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 {
     width: 90%;
 }
+#page5-slide-exit{
+    top: -320px;
+    right: -580px;
+    position:relative;
+}
 #page5-carousel-leftarrow,
 #page5-carousel-rightarrow{
     width: 50%;
@@ -435,7 +546,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     position: fixed;
 }
 .page6{
-    height: 6540px;
+    height: 6500px;
     background-image: url("../img/page6/pg6background.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -443,10 +554,10 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     margin: 0px !important;
     font-size: 28px;
     text-align: center;
+    position: fixed;
 }
 .pg6-content1{
     height: 1090px;
-    border-bottom: 2px solid aqua;
 }
 .pg6-content1-inner{
     display: block;
@@ -454,12 +565,10 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 }
 .pg6-content2{
     height: 1090px;
-    border-bottom: 2px solid aqua;
 }
 .pg6-content3{
     height: 1090px;
     text-align: center;
-    border-bottom: 2px solid aqua;
 }
 #pg6_act3{
     max-width: 20%;
@@ -469,7 +578,6 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 }
 .pg6-content4{
     height: 1090px;
-    border-bottom: 2px solid aqua;
 }
 .pg6-content4-inner{
     display: block;
@@ -477,7 +585,6 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 }
 .pg6-content5{
     height: 1090px;
-    border-bottom: 2px solid aqua;
 }
 .pg6-content5-inner{
     display: block;
@@ -492,20 +599,87 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 }
 .pg6-content6{
     height: 1090px;
-    border-bottom: 2px solid aqua;
 }
 .pg6-content6-inner{
-    display: block;
-    margin: auto 0px;
+    padding-top: 200px;
+}
+#page6-next-btn{
+    padding-top: 200px;
 }
 #pg6panel3{
     max-width: 40%;
     float: right;
 }
-
+.seeStory6-cont{
+    padding-top: 400px;
+}
 #pg6nextbutton{
     cursor: pointer;
     width: 200px;
+}
+.story1content,
+.story2content,
+.story3content,
+.story4content,
+.story5content,
+.story6content,
+.story7content,
+.story8content
+{
+    height: 4000px;
+    background-image: url("../img/page6/story_contents/storybg.png");
+    width: auto;
+    background-size: 2107px 4360px;
+    position: fixed;
+}
+
+.story1content-inner{
+    height: 4000px;
+    background-image: url("../img/page6/story_contents/story1content.png");
+    width: auto;
+    background-size: 1800px 4360px;
+}
+.story2content-inner{
+    height: 4000px;
+    background-image: url("../img/page6/story_contents/story2content.png");
+    width: auto;
+    background-size: 1800px 4360px;
+}
+.story3content-inner{
+    height: 4000px;
+    background-image: url("../img/page6/story_contents/story3content.png");
+    width: auto;
+    background-size: 1800px 4360px;
+}
+.story4content-inner{
+    height: 4000px;
+    background-image: url("../img/page6/story_contents/story4content.png");
+    width: auto;
+    background-size: 1800px 4360px;
+}
+.story5content-inner{
+    height: 4000px;
+    background-image: url("../img/page6/story_contents/story5content.png");
+    width: auto;
+    background-size: 1800px 4360px;
+}
+.story6content-inner{
+    height: 4000px;
+    background-image: url("../img/page6/story_contents/story6content.png");
+    width: auto;
+    background-size: 1800px 4360px;
+}
+.story7content-inner{
+    height: 4000px;
+    background-image: url("../img/page6/story_contents/story7content.png");
+    width: auto;
+    background-size: 1800px 4360px;
+}
+.story8content-inner{
+    height: 4000px;
+    background-image: url("../img/page6/story_contents/story8content.png");
+    width: auto;
+    background-size: 1800px 4360px;
 }
 
 .page7{
@@ -513,7 +687,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     height: 1090px;
     background-image: url("../img/page2/pg2bganimation.gif");
     background-size: cover;
-    /* position: fixed; */
+    position: fixed;
 } 
 .page7-content{
 	background-attachment: fixed;
@@ -531,7 +705,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 }
 .pg7-sentences1{
     position: absolute;
-    top: 60%;
+    top: 67%;
     left: 19%;
     transform: translate(30%, -70%);
     -ms-transform: translate(-50%, -50%);
@@ -544,7 +718,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 }
 .pg7-sentences2{
     position: absolute;
-    top: 58%;
+    top: 65%;
     left: 19%;
     transform: translate(30%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -557,7 +731,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 }
 #pg7-scarcydialoguebox-btn{
     position: absolute;
-    top: 69%;
+    top: 78%;
     right: 8%;
     transform: translate(-50%, -100%);
     -ms-transform: translate(-50%, -50%);
@@ -572,22 +746,21 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 }
 #pg7-exitbutton-btn{
     position: absolute;
-    top: 69%;
+    top: 79%;
     right: 8%;
     transform: translate(-170%, -535%);
     -ms-transform: translate(-50%, -50%);
 }
 .page8{
 	background-attachment: fixed;
-    height: 1090px;
+    height: 928px;
     background-image: url("../img/page8/InsidePlants.gif");
     background-size: cover;
-    /* position: fixed; */
+    position: fixed;
 } 
 .page8-content{
 	background-attachment: fixed;
     background-image: url("../img/page8/Front_plants_2.gif");
-    height: 1090px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 0px;
@@ -627,3 +800,41 @@ img#story8:hover{
     text-align: left;
     font-size: 22px;
 }
+
+#pg7-column-dialogue2{
+    text-align: center;
+    position: absolute;
+    bottom: -4%;
+    width: 100%;
+}
+.seeStory6{
+    height: 30%;
+}
+.page8-content-inner{
+    padding: 100px 0px;
+}
+#aboutus{
+    padding: 80px 0px;
+    width: 10%;
+    float: right;
+    margin-right: 2%;
+    cursor: pointer;
+}
+#page8-nextbutton{
+    padding: 130px 0px;
+    width: 10%;
+    cursor: pointer;
+}
+#copylink, #linkcopied{
+    padding: 130px 0px;
+    width: 10%;
+    cursor: pointer;
+}
+
+.aboutus-content{
+    display: none;
+    height: 2180px;
+    background-image: url("../img/aboutus/aboutuspage.png");
+    background-size:contain;
+    position: fixed;
+} 

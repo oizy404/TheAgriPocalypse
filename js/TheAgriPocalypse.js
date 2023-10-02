@@ -1,16 +1,47 @@
 jQuery(document).ready(function($){
 
     $('.parallax').mousemove(function(e){
-      var x = -(e.pageX + this.offsetLeft) / 20;
-      var y = -(e.pageY + this.offsetTop) / 20;
+      var x = -(e.pageX + this.offsetLeft) / 30;
+      var y = -(e.pageY + this.offsetTop) / 350;
       $(this).css('background-position', x + 'px ' + y + 'px');
     });  
+    $('.parallax2').mousemove(function(e){
+      var x = -(e.pageX + this.offsetLeft) / 100;
+      var y = -(e.pageY + this.offsetTop) / 100;
+      $(this).css('background-position', x + 'px ' + y + 'px');
+    }); 
+
 
     $('#column-dialogue1').hide();
     $('#column-dialogue2').hide();
     $('.sentences2').hide();
     $('.pg7-sentences2').hide();
     $('.page5-dialogue2').hide();
+    $('#line2').hide();
+    $('#copylink').hide();
+    $('#linkcopied').hide();
+    $('.urlCopy-msg').hide();
+    $('#pg3_panel6overlay').hide();
+    $('#pg3_panel3dialogue').hide();
+    $('#pg3_panel5dialogue').hide();
+
+    jQuery( ".pg3-content5" ).hover(function() {
+      jQuery('#pg3_panel6').css('left','-210px');
+      jQuery( "#pg3_panel6overlay" ).first().show( "slow", function showNext() {
+        jQuery( this ).next( "div" ).show( "slow", showNext );
+      });
+    });
+    jQuery( "#pg3_panel3" ).hover(function() {
+      jQuery( "#pg3_panel3dialogue" ).first().show( "slow", function showNext() {
+        jQuery( this ).next( "div" ).show( "slow", showNext );
+      });
+    });
+    jQuery( "#pg3_panel5" ).hover(function() {
+      jQuery('#pg3_panel5dialogue').css('bottom','550px');
+      jQuery( "#pg3_panel5dialogue" ).first().show( "slow", function showNext() {
+        jQuery( this ).next( "div" ).show( "slow", showNext );
+      });
+    });
 
     $('.pg-content3-colum2').on('click', function(){
       $(this).hide();
@@ -25,7 +56,7 @@ jQuery(document).ready(function($){
       $('#column-dialogue2').show()
     })
     $('#pg7-scarcydialoguebox-btn').on('click', function(){
-      $(this).css('top', '68.5%');
+      $(this).css('top', '78%');
       $('.pg7-sentences1').hide();
       $('.pg7-sentences2').show();
       $('#pg7-column-dialogue2').show()
@@ -34,6 +65,12 @@ jQuery(document).ready(function($){
     $('#dialogue2A').on('click', function(){
       $('.page5-dialogue2').show();
       $('.page5-dialogue1').hide();
+    })
+    $('#page5-slide-exit').on('click', function(){
+      $('.page5-dialogue2').show();
+      $('.page5-dialogue1').hide();
+      $('.page5A').css('position','fixed');
+      $('.page5').css('position','relative');
     })
 
     
@@ -68,6 +105,64 @@ jQuery(document).ready(function($){
     $('#dialogue1A , #show-page5A').on('click',function(){
       $('.page5').css('position','fixed');
       $('.page5A').css('position','relative');
+    })
+    $('#pg5-exitbutton-btn').on('click', function(){
+      $('.page5').css('position','fixed');
+      $('.page6').css('position','relative');
+    })
+    $('#page6-next-btn').on('click', function(){
+      $('.page6').css('position','fixed');
+      $('.page7').css('position','relative');
+    })
+    $('#pg7-exitbutton-btn').on('click', function(){
+      $('.page7').css('position','fixed');
+      $('.page8').css('position','relative');
+    })
+    $('#aboutus-button').on('click', function(){
+      $('.page8').css('position','fixed');
+      $('.aboutus-content').css('position','relative');
+    })
+    $('#page8-nextbutton').on('click', function(){
+      $('#line2').show();
+      $('#line1').hide();
+      $('#copylink').show();
+      $(this).hide();
+    })
+    $('#copylink').on('click', function(){
+      var temp = $("<input>");
+      $("body").append(temp);
+      temp.val($('#tap-link').text()).select();
+      document.execCommand("copy");
+      temp.remove();
+      $('#copylink').hide();
+      $('#linkcopied').show();
+    })
+    $('#aboutus-button').on('click', function(){
+      $('.aboutus-content').show();
+    })
+    $('#story1').on('click', function(){
+      $('.story1content').css('position','relative');
+    })
+    $('#story2').on('click', function(){
+      $('.story2content').css('position','relative');
+    })
+    $('#story3').on('click', function(){
+      $('.story3content').css('position','relative');
+    })
+    $('#story4').on('click', function(){
+      $('.story4content').css('position','relative');
+    })
+    $('#story5').on('click', function(){
+      $('.story5content').css('position','relative');
+    })
+    $('#story6').on('click', function(){
+      $('.story6content').css('position','relative');
+    })
+    $('#story7').on('click', function(){
+      $('.story7content').css('position','relative');
+    })
+    $('#story8').on('click', function(){
+      $('.story8content').css('position','relative');
     })
         // Select all links with hashes
     $('a[href*="#"]')
