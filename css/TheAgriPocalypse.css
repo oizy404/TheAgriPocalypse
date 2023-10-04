@@ -26,16 +26,20 @@ body, html{
     background-repeat: no-repeat;
 } */
 
+
 .navigation{
     height: 100%;
-    z-index: 99999;
+    z-index: -1;
     position: fixed;
+    width: 6%
 }
 .acts{
-    height: 90%;
+    height: 95%;
 }
 .nav-btns{
-    height: 10%;
+    height: 5%;
+    position: absolute;
+    bottom: 0;
 }
 .acts-img{
     display: flex;
@@ -50,14 +54,14 @@ body, html{
 #present-nav-btn
 {
     margin-top: 20px;
-    width: 40%;
+    width: 60%;
 }
 #nocheck{
-    width: 15%;
+    width: 35%;
 }
 #sound-text{
-    width: 25%;
-    margin-top: 10px;
+    width: 55%;
+    margin-top: 5px;
 }
 .sound-div{
     display: inline-flex;
@@ -65,11 +69,18 @@ body, html{
 }
 .front-pg{
 	background-attachment: fixed;
-	height: 1895%;
+	height: 1932%;
     background-image: url("../img/loading_page/LoadingPage.gif");
-    background-size: cover;
-    position: fixed;
+    background-size: auto;
+    position: relative;
+    display: none;
 } 
+
+#audio-instruction {
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
 .front-pg-cont{
     margin: auto 0;
 }
@@ -81,7 +92,8 @@ body, html{
     background-image: url("../img/page1/pg1wholebg.png");
     width: auto;
     background-size: 2107px 3270px;
-    position: relative;
+    position: fixed;
+    background-repeat: no-repeat;
 }
 .page1-content {
     margin-left: auto;
@@ -93,6 +105,13 @@ body, html{
 .pg-content1{
     /* border-bottom: 2px solid aqua; */
 } 
+#dialogueanimation{
+    width: 10%;
+    position: absolute;
+    left: 11%;
+    z-index: 10;
+    bottom: 15%;
+}
 .pg-content1-B{
     text-align: center;
 }
@@ -205,6 +224,7 @@ img#scarcydialoguebox {
     background-image: url("../img/page2/pg2bganimation.gif");
     background-size: cover;
     position: fixed;
+    background-repeat: no-repeat;
 } 
 .page2-content{
 	background-attachment: fixed;
@@ -224,13 +244,14 @@ img#scarcydialoguebox {
     width: 300px;
 }
 .page3{
-    height: 6865px;
+    /* height: 6865px; */
     background-image: url("../img/page3/pg3bg.png");
     background-position: center;
     background-size: 2107px 7630px;
     margin: 0px !important;
     position: fixed;
     font-size: 28px;
+    background-repeat: no-repeat;
 }
 .pg3-content1 , .pg3-content2, .pg3-content3, .pg3-content4, .pg3-content5, .pg3-content6, .pg3-content7{
     text-align: center;
@@ -334,11 +355,14 @@ img#scarcydialoguebox {
 }
 
 .page4{
-    height: 3855px;
-    background-color: #ffff;
+    /* height: 3855px; */
+    background-image: url("../img/page4/page4bg.png");
+    background-position: center;
+    background-size: 2107px 3870px;
     margin: 0px !important;
     position: fixed;
     font-size: 28px;
+    background-repeat: no-repeat;
 }
 .pg4-content1, .pg4-content2, .pg4-content3, .pg4-content4{
     /* border-bottom: 2px solid blueviolet; */
@@ -346,7 +370,7 @@ img#scarcydialoguebox {
     text-align: center;
 }
 .pg4-content4{
-    background-image: url("../img/page4/pg4bg.png");
+    background-image: url("../img/page4/fence.png");
     background-position: center;
     background-size: cover;
 }
@@ -365,6 +389,9 @@ img#scarcydialoguebox {
 .page4-panel2-txt p{
     display: block;
     margin: 150px auto auto auto;
+}
+.fatech-btns{
+    margin-top: 55px;
 }
 img#vertical, img#organic, img#regenerative{
     cursor: pointer;  
@@ -479,12 +506,6 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 }
 
 #pg5-scarcydialoguebox-btn{
-    position: absolute;
-    top: 78%;
-    right: 12%;
-    transform: translate(-50%, -100%);
-    -ms-transform: translate(-50%, -50%);
-    /* background-color: #7f855d; */
     color: white;
     font-size: 16px;
     padding: 12px 50px;
@@ -492,7 +513,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-    width: 7%;
+    width: 15%;
 }
 #pg5-exitbutton-btn{
     position: absolute;
@@ -554,7 +575,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     margin: 0px !important;
     font-size: 28px;
     text-align: center;
-    position: fixed;
+    position: relative;
 }
 .pg6-content1{
     height: 1090px;
@@ -632,54 +653,66 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     background-size: 2107px 4360px;
     position: fixed;
 }
-
+#story1content-back-btn,
+#story2content-back-btn,
+#story3content-back-btn,
+#story4content-back-btn,
+#story5content-back-btn,
+#story6content-back-btn,
+#story7content-back-btn,
+#story8content-back-btn{
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: fixed;
+}
 .story1content-inner{
     height: 4000px;
     background-image: url("../img/page6/story_contents/story1content.png");
     width: auto;
-    background-size: 1800px 4360px;
+    background-size: cover;
 }
 .story2content-inner{
     height: 4000px;
     background-image: url("../img/page6/story_contents/story2content.png");
     width: auto;
-    background-size: 1800px 4360px;
+    background-size: cover;
 }
 .story3content-inner{
     height: 4000px;
     background-image: url("../img/page6/story_contents/story3content.png");
     width: auto;
-    background-size: 1800px 4360px;
+    background-size: cover;
 }
 .story4content-inner{
     height: 4000px;
     background-image: url("../img/page6/story_contents/story4content.png");
     width: auto;
-    background-size: 1800px 4360px;
+    background-size: cover;
 }
 .story5content-inner{
     height: 4000px;
     background-image: url("../img/page6/story_contents/story5content.png");
     width: auto;
-    background-size: 1800px 4360px;
+    background-size: cover;
 }
 .story6content-inner{
     height: 4000px;
     background-image: url("../img/page6/story_contents/story6content.png");
     width: auto;
-    background-size: 1800px 4360px;
+    background-size: cover;
 }
 .story7content-inner{
     height: 4000px;
     background-image: url("../img/page6/story_contents/story7content.png");
     width: auto;
-    background-size: 1800px 4360px;
+    background-size: cover;
 }
 .story8content-inner{
     height: 4000px;
     background-image: url("../img/page6/story_contents/story8content.png");
     width: auto;
-    background-size: 1800px 4360px;
+    background-size: cover;
 }
 
 .page7{
@@ -688,6 +721,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     background-image: url("../img/page2/pg2bganimation.gif");
     background-size: cover;
     position: fixed;
+    background-repeat: no-repeat;
 } 
 .page7-content{
 	background-attachment: fixed;
@@ -757,6 +791,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     background-image: url("../img/page8/InsidePlants.gif");
     background-size: cover;
     position: fixed;
+    background-repeat: no-repeat;
 } 
 .page8-content{
 	background-attachment: fixed;
@@ -837,4 +872,5 @@ img#story8:hover{
     background-image: url("../img/aboutus/aboutuspage.png");
     background-size:contain;
     position: fixed;
+    background-repeat: no-repeat;
 } 

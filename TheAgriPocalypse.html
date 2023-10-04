@@ -9,10 +9,10 @@
 </head>
 <body>
     
-    <div class="row navigation">
-        <div class="col">
-            <div class="row acts">
-                <div class="col-md-1 acts-img">
+    <div class="navigation">
+        <div class="">
+            <div class="acts">
+                <div class="acts-img">
                     <a href=""><img src="img/navigation_elements/act1.png" alt="act1-nav-btn" id="act1-nav-btn"></a>
                     <a href=""><img src="img/navigation_elements/act2.png" alt="act2-nav-btn" id="act2-nav-btn"></a>
                     <a href=""><img src="img/navigation_elements/yfc.png" alt="yfc-nav-btn" id="yfc-nav-btn"></a>
@@ -21,8 +21,8 @@
                     <a href=""><img src="img/navigation_elements/present.png" alt="present-nav-btn" id="present-nav-btn"></a>
                 </div>
             </div>
-            <div class="row nav-btns">
-                <div class="col-md-2 sound-div">
+            <div class="nav-btns">
+                <div class="sound-div">
                     <a href="">
                         <img src="img/navigation_elements/nocheck.png" alt="nocheck" id="nocheck">
                         <img src="img/navigation_elements/withcheck.png" alt="withcheck" id="withcheck" style="display: none;">
@@ -37,6 +37,8 @@
             <div class="row front-pg parallax justify-content-center">
                 <div class="col-md-9 front-pg-cont text-center">
                     <img src="img/loading_page/clicktostart.png" alt="clicktostart" id="clicktostart">
+                    <img src="img/loading_page/loading.gif" alt="loading" id="loading" style="display: none;"><br>
+                    <img src="img/loading_page/audio.png" alt="audio-instruction" id="audio-instruction" style="display: none;">
                 </div>
             </div>
             <div class="row page1 parallax">
@@ -95,7 +97,7 @@
                             </div>
                         </div>
                         <div class="pg-content3-colum2">  
-
+                            <img src="img/page1/dialogueanimation.gif" alt="dialogueanimation" id="dialogueanimation">
                         </div>
                     </div>
 
@@ -241,18 +243,18 @@
                     </div>
                     <div class="row pg4-content4 justify-content-center" id="pg4-content4">
                         <div class="col">
-                            <p class="mt-5">Some of these techniques are organic farming, regenerative farming, and vertical farming</p>
+                            <p class="mt-2">Some of these techniques are organic farming, regenerative farming, and vertical farming</p>
 
-                            <img src="img/page4/selectone.png" alt="selectone" style="width: 300px;">
+                            <img src="img/page4/selectone.png" alt="selectone" style="width: 200px;">
                             <div class="row farming-techniques justify-content-center">
-                                <div class="col-md-4 mt-5">
+                                <div class="col-md-4 fatech-btns">
                                     <a href="#pg4A-content1" id="vertical-btn">
                                         <img src="img/buttons/vertical.png" alt="vertical" id="vertical" style="width: 400px;">
                                     </a>
-                                    <a href="#page-4B" id="organic-btn">
+                                    <a href="#organictext-farming" id="organic-btn">
                                         <img src="img/buttons/organic.png" alt="organic" id="organic" style="margin-right: 90px;width: 400px;margin-top: -10px;">
                                     </a>
-                                    <a href="#page-4C" id="regenerative-btn">
+                                    <a href="#regtxt-farming" id="regenerative-btn">
                                         <img src="img/buttons/regenerative.png" alt="regenerative" id="regenerative" style="margin-right: 50px;width: 400px;margin-top: -45px;">
                                     </a>
                                 </div>
@@ -329,8 +331,8 @@
                                 For more info: <a href="https://www.fao.org/land-water/overview/covid19/homegardens/en/" style="color: #fff;">https://www.fao.org/land-water/overview/covid19/homegardens/en/</a>
                             </p>
                             <br><br>
-                            <a href="#pg4-content4">
-                                <img src="img/buttons/backbutton.png" alt="" style="width: 100px;">
+                            <a href="#pg4-content4" id="vertical-backbutton">
+                                <img src="img/buttons/backbutton.png" alt="vertical-backbutton" style="width: 100px;">
                             </a>
                         </div>
                     </div>
@@ -341,8 +343,8 @@
             <div class="row page4-B" id="page-4B">
                 <div class="col page4B-content">
                     <div class="row pg4B-content1 justify-content-center" id="pg4B-content1">
-                        <div class="col-md-8 mt-5 mb-5">
-                            <img src="img/page4/organic-farming/organictext.png" alt="organictext-farming">
+                        <div class="col-md-6 mt-5 mb-5">
+                            <img src="img/page4/organic-farming/organictext.png" alt="organictext-farming" id="organictext-farming">
                             <img src="img/page4/organic-farming/organicfarming.png" alt="organicfarming" style="width: 70%;">
                             <div class="mt-2 mb-5" id="organic-farming-paragraph">
                                 <p>
@@ -350,30 +352,36 @@
                                     prioritize environmental sustainability, animal welfare, and human health. It avoids the use of synthetic
                                     chemicals, genetically modified organisms (GMOs), and synthetic pesticides or fertilizers. Instead, organic
                                     farming relies on natural processes and materials to nurture the soil, plants, and animals.
-                                    
+                                    <br><br>
                                     Farmers avoid using synthetic chemicals such as pesticides, which are like bug-killing sprays, and synthetic
                                     fertilizers, which are like plant food. Instead, they use natural alternatives that are safer for the
                                     environment and us.
+                                    <br><br>
                                     Just like how healthy plants need good soil to grow, organic farming focuses on keeping the soil in tip-top
                                     shape. Farmers use things like compost (rotted food and plant material) to make the soil rich in nutrients.
+                                    <br><br>
                                     Organic farms are like little ecosystems where many different plants and creatures live together. This
                                     helps keep a balance so that pests don't take over, and friendly insects help with things like pollination
                                     (when bees help flowers turn into fruits).
+                                    <br><br>
                                     Organic farming isn't just about plants; it's about animals too. Organic livestock (like chickens, cows, and
                                     pigs) are treated well, with access to fresh air and open space. They're given organic feed without
                                     synthetic stuff.
+                                    <br><br>
                                     Organic farming doesn't use genetically modified organisms (GMOs), which are plants or animals that
                                     scientists have changed in a lab. Instead, it sticks to natural breeds and varieties.
+                                    <br><br>
                                     Organic farmers work in harmony with nature. They pay attention to what's happening in the environment
                                     and use methods that don't harm it. This can mean things like rotating crops and using friendly insects to
                                     keep pests away.
+                                    <br><br>
                                     Because organic crops grow slowly and naturally, they often end up being tastier and more nutritious.
-                                    
+                                    <br><br>
                                     For more info: <a href="https://www.fao.org/organicag/oa-faq/oa-faq1/en" style="color: #fff;">https://www.fao.org/organicag/oa-faq/oa-faq1/en</a>
                                 </p>
                             </div>
-                            <a href="#pg4-content4">
-                                <img src="img/buttons/backbutton.png" alt="" style="width: 100px;">
+                            <a href="#pg4-content4" id="organic-backbutton">
+                                <img src="img/buttons/backbutton.png" alt="organic-backbutton" style="width: 100px;">
                             </a>
                         </div>
                     </div>
@@ -383,8 +391,8 @@
             <div class="row page4-C" id="page-4C">
                 <div class="col page4C-content">
                     <div class="row pg4C-content1 justify-content-center" id="pg4C-content1">
-                        <div class="col-md-8 mt-5 mb-5">
-                            <img src="img/page4/regenerative-farming/regtxt.png" alt="regtxt-farming" style="width: 30%;">
+                        <div class="col-md-6 mt-5 mb-5">
+                            <img src="img/page4/regenerative-farming/regtxt.png" alt="regtxt-farming" id="regtxt-farming" style="width: 30%;">
                             <img src="img/page4/regenerative-farming/regenerativefarming.png" alt="regenerativefarming" style="width: 70%">
                             <div class="mt-2 mb-5" id="reg-farming-paragraph">
                                 <p>
@@ -393,32 +401,37 @@
                                     encompasses holistic farming systems that offer numerous benefits, including the improvement of water
                                     and air quality, the enhancement of ecosystem biodiversity, the production of nutrient-rich food, and the
                                     storage of carbon to contribute to mitigating the effects of climate change.
-
+                                    <br><br><br>
                                     Regenerative farming focuses on healing and enhancing the soil. Healthy soil means better nutrient-rich
-
                                     food. Farmers use techniques like cover cropping, composting, and reduced tilling to keep the soil in tip-
                                     top shape.
-
+                                    <br><br>
                                     Regenerative farms welcome a variety of plants and creatures. This mix helps keep pests in check naturally
                                     and supports a balanced ecosystem
+                                    <br><br>
                                     Just like in organic farming, chemicals like synthetic pesticides and fertilizers aren't used. Instead, natural
                                     methods keep pests away and feed the soil.
+                                    <br><br>
                                     Thisfarming aims to use resources wisely. Water is conserved, and energy-efficient practices are adopted
                                     to reduce the farm's environmental footprint.
+                                    <br><br>
                                     Regenerative farming helps fight climate change. Certain practices, like cover crops and reduced tilling,
                                     can pull carbon dioxide from the air and store it in the soil.
+                                    <br><br>
                                     Animals are often a part of regenerative farms. They help with things like pest control and soil health.
                                     These animals are treated well, with space to roam and natural diets.
+                                    <br><br>
                                     Regenerative farming often emphasizes producing food for the local community. This reduces the need
                                     for long transportation and supports local economies.
+                                    <br><br>
                                     The goal is to create a farm that thrives for generations. The practices used should enhance the land rather
                                     than deplete it over time.
-
+                                    <br><br><br>
                                     For more info: <a href="https://www.cbf.org/issues/agriculture/regenerative-agriculture.html" style="color: #fff;">https://www.cbf.org/issues/agriculture/regenerative-agriculture.html</a>
                                 </p>
                             </div>
-                            <a href="#pg4-content4">
-                                <img src="img/buttons/backbutton.png" alt="" style="width: 100px;">
+                            <a href="#pg4-content4" id="reg-backbutton">
+                                <img src="img/buttons/backbutton.png" alt="reg-backbutton" style="width: 100px;">
                             </a>
                         </div>
                     </div>
@@ -438,9 +451,9 @@
                                 <a href="#page5A" id="show-page5A">Young Farmers Challenge.</a>
                             </p>
                         </div>
-                        <img src="img/buttons/nextbutton.png" alt="scarcydialoguebox-btn" id="pg5-scarcydialoguebox-btn">
-                        <a href="#page-6"><img src="img/buttons/exitbutton.png" alt="exitbutton-btn" id="pg5-exitbutton-btn" style="width: 3%;"></a>
                         <div id="page5-column-dialogue">
+                            <center><a href="#page-6"><img src="img/buttons/nextbutton.png" alt="scarcydialoguebox-btn" id="pg5-scarcydialoguebox-btn"></a></center>
+
                             <a href="#page5A">
                                 <img src="img/buttons/dialogue1A.png" alt="dialogue1A" id="dialogue1A">
                             </a>
@@ -524,7 +537,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row pg6-content2 justify-content-center">
+                    <div class="row pg6-content2 justify-content-center" id="pg6-content2">
                         <div class="col-md-2 characters-col1">
                             <a href="#story6content"><img src="img/page6/characters/story6.png" alt="story6" id="story6" style="width:80%"></a>
                             <img src="img/page6/characters/story6title.png" alt="story6title" id="story6title" style="width:50%">
@@ -603,28 +616,44 @@
             </div> 
 
             <div class="row story1content parallax justify-content-center">
-                <div data-offset="5" class="col story1content-inner parallax2" id="story1content"></div>
+                <div data-offset="5" class="col story1content-inner parallax2" id="story1content">
+                    <a href="#pg6-content2"><img src="img/buttons/back_button.png" alt="story1content-back-btn" id="story1content-back-btn"></a>
+                </div>
             </div>
             <div class="row story2content parallax justify-content-center">
-                <div class="col story2content-inner parallax2" id="story2content"></div>
+                <div class="col story2content-inner parallax2" id="story2content">
+                    <a href="#pg6-content2"><img src="img/buttons/back_button.png" alt="story2content-back-btn" id="story2content-back-btn"></a>
+                </div>
             </div>
             <div class="row story3content parallax justify-content-center">
-                <div class="col story3content-inner parallax2" id="story3content"></div>
+                <div class="col story3content-inner parallax2" id="story3content">
+                    <a href="#pg6-content2"><img src="img/buttons/back_button.png" alt="story3content-back-btn" id="story3content-back-btn"></a>
+                </div>
             </div>
             <div class="row story4content parallax justify-content-center">
-                <div class="col story4content-inner parallax2" id="story4content"></div>
+                <div class="col story4content-inner parallax2" id="story4content">
+                    <a href="#pg6-content2"><img src="img/buttons/back_button.png" alt="story4content-back-btn" id="story4content-back-btn"></a>
+                </div>
             </div>
             <div class="row story5content parallax justify-content-center">
-                <div class="col story5content-inner parallax2" id="story5content"></div>
+                <div class="col story5content-inner parallax2" id="story5content">
+                    <a href="#pg6-content2"><img src="img/buttons/back_button.png" alt="story5content-back-btn" id="story5content-back-btn"></a>
+                </div>
             </div>
             <div class="row story6content parallax justify-content-center">
-                <div data-offset="5" class="col story6content-inner parallax2" id="story6content"></div>
+                <div data-offset="5" class="col story6content-inner parallax2" id="story6content">
+                    <a href="#pg6-content2"><img src="img/buttons/back_button.png" alt="story6content-back-btn" id="story6content-back-btn"></a>
+                </div>
             </div>
             <div class="row story7content parallax justify-content-center">
-                <div class="col story7content-inner parallax2" id="story7content"></div>
+                <div class="col story7content-inner parallax2" id="story7content">
+                    <a href="#pg6-content2"><img src="img/buttons/back_button.png" alt="story7content-back-btn" id="story7content-back-btn"></a>
+                </div>
             </div>
             <div class="row story8content parallax justify-content-center">
-                <div class="col story8content-inner parallax2" id="story8content"></div>
+                <div class="col story8content-inner parallax2" id="story8content">
+                    <a href="#pg6-content2"><img src="img/buttons/back_button.png" alt="story8content-back-btn" id="story8content-back-btn"></a>
+                </div>
             </div>
 
             <div class="row page7 justify-content-center" id="page-7">
@@ -643,10 +672,9 @@
                                 knowledge far and wide.
                             </p>
                             <img src="img/buttons/nextbutton.png" alt="scarcydialoguebox-btn" id="pg7-scarcydialoguebox-btn" style="width: 12%;">
-                            <a href="#page-8"><img src="img/buttons/exitbutton.png" alt="exitbutton-btn" id="pg7-exitbutton-btn" style="width: 3%;"></a>
                         </div> 
                         <div id="pg7-column-dialogue2">
-                            <a href="#" id="pg7-dialogues">
+                            <a href="#page-8" id="pg7-dialogues">
                                 <img src="img/buttons/dialogue3.png" alt="dialogue3" id="pg7-dialogue1">
                                 <img src="img/buttons/dialogue3A.png" alt="dialogue3A" class="mt-3" id="pg7-dialogue2">
                             </a>

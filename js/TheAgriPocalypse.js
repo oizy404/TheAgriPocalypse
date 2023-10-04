@@ -10,6 +10,16 @@ jQuery(document).ready(function($){
       var y = -(e.pageY + this.offsetTop) / 100;
       $(this).css('background-position', x + 'px ' + y + 'px');
     }); 
+    $('#clicktostart').on('click', function(){
+      $('#clicktostart').hide();
+      $('#loading').show();
+      $('#audio-instruction').show();
+      setTimeout(function() {
+        $(".front-pg").hide();
+        $('.page1').css('position','relative');
+        $('.navigation').css('z-index','999999');
+    }, 3000);
+    })
 
 
     $('#column-dialogue1').hide();
@@ -24,6 +34,7 @@ jQuery(document).ready(function($){
     $('#pg3_panel6overlay').hide();
     $('#pg3_panel3dialogue').hide();
     $('#pg3_panel5dialogue').hide();
+    $('#pg5-scarcydialoguebox-btn').hide();
 
     jQuery( ".pg3-content5" ).hover(function() {
       jQuery('#pg3_panel6').css('left','-210px');
@@ -57,6 +68,7 @@ jQuery(document).ready(function($){
     })
     $('#pg7-scarcydialoguebox-btn').on('click', function(){
       $(this).css('top', '78%');
+      $(this).hide();
       $('.pg7-sentences1').hide();
       $('.pg7-sentences2').show();
       $('#pg7-column-dialogue2').show()
@@ -67,8 +79,11 @@ jQuery(document).ready(function($){
       $('.page5-dialogue1').hide();
     })
     $('#page5-slide-exit').on('click', function(){
+      $('#pg5-scarcydialoguebox-btn').show();
       $('.page5-dialogue2').show();
       $('.page5-dialogue1').hide();
+      $('#dialogue1A').hide();
+      $('#dialogue2A').hide();
       $('.page5A').css('position','fixed');
       $('.page5').css('position','relative');
     })
@@ -87,16 +102,25 @@ jQuery(document).ready(function($){
       $('.page4').css('position','relative');
     })
     $('#vertical-btn').on('click',function(){
+      $('.page4').css('position','fixed');
       $('.page4-A').css('position','relative');
     })
     $('#organic-btn').on('click',function(){
+      $('.page4').css('position','fixed');
       $('.page4-A').css('position','fixed');
       $('.page4-B').css('position','relative');
     })
     $('#regenerative-btn').on('click',function(){
+      $('.page4').css('position','fixed');
       $('.page4-A').css('position','fixed');
       $('.page4-B').css('position','fixed');
       $('.page4-C').css('position','relative');
+    })
+    $('#reg-backbutton, #vertical-backbutton, #organic-backbutton').on('click', function(){
+      $('.page4-A').css('position','fixed');
+      $('.page4-B').css('position','fixed');
+      $('.page4-C').css('position','fixed');
+      $('.page4').css('position','relative');
     })
     $('#pg4nextbutton').on('click',function(){
       $('.page4').css('position','fixed');
@@ -106,7 +130,7 @@ jQuery(document).ready(function($){
       $('.page5').css('position','fixed');
       $('.page5A').css('position','relative');
     })
-    $('#pg5-exitbutton-btn').on('click', function(){
+    $('#pg5-scarcydialoguebox-btn').on('click', function(){
       $('.page5').css('position','fixed');
       $('.page6').css('position','relative');
     })
@@ -114,7 +138,7 @@ jQuery(document).ready(function($){
       $('.page6').css('position','fixed');
       $('.page7').css('position','relative');
     })
-    $('#pg7-exitbutton-btn').on('click', function(){
+    $('#pg7-dialogues').on('click', function(){
       $('.page7').css('position','fixed');
       $('.page8').css('position','relative');
     })
@@ -142,27 +166,35 @@ jQuery(document).ready(function($){
     })
     $('#story1').on('click', function(){
       $('.story1content').css('position','relative');
+      $('.page6').css('position', 'fixed');
     })
     $('#story2').on('click', function(){
       $('.story2content').css('position','relative');
+      $('.page6').css('position', 'fixed');
     })
     $('#story3').on('click', function(){
       $('.story3content').css('position','relative');
+      $('.page6').css('position', 'fixed');
     })
     $('#story4').on('click', function(){
       $('.story4content').css('position','relative');
+      $('.page6').css('position', 'fixed');
     })
     $('#story5').on('click', function(){
       $('.story5content').css('position','relative');
+      $('.page6').css('position', 'fixed');
     })
     $('#story6').on('click', function(){
       $('.story6content').css('position','relative');
+      $('.page6').css('position', 'fixed');
     })
     $('#story7').on('click', function(){
       $('.story7content').css('position','relative');
+      $('.page6').css('position', 'fixed');
     })
     $('#story8').on('click', function(){
       $('.story8content').css('position','relative');
+      $('.page6').css('position', 'fixed');
     })
         // Select all links with hashes
     $('a[href*="#"]')
