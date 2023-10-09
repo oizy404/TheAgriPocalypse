@@ -18,9 +18,102 @@ jQuery(document).ready(function($){
         $(".front-pg").hide();
         $('.page1').css('position','relative');
         $('.navigation').css('z-index','999999');
-    }, 3000);
-    })
+      }, 3000);
+    });
+    
 
+    function pauseAllSounds(){
+
+      $('#nocheck').show();
+      $('#withcheck').hide();
+
+      $('#carousel-btn-sound')[0].pause();
+      $('#click-btn-sound')[0].pause();
+      $('#page12-sound')[0].pause();
+      $('#page3-sound')[0].pause();
+      $('#page6-sound')[0].pause();
+      $('#page78-sound')[0].pause();
+
+    }
+
+    function playSoundsOnEvents(){
+      
+      $('#nocheck').hide();
+      $('#withcheck').show();
+
+      $(document).on('click', function(){
+        if( $('#sound-div').hasClass('sound-on') ){
+          $('#click-btn-sound')[0].play();
+        }
+      })
+      $('.carousel-control-next, .carousel-control-prev').on('click', function(){
+        if( $('#sound-div').hasClass('sound-on') ){
+          $('#click-btn-sound')[0].pause();
+          $('#carousel-btn-sound')[0].play();
+        }
+      })
+      $('.page1, .page2').mousemove(function(){
+        if( $('#sound-div').hasClass('sound-on') ){
+          $('#page3-sound')[0].pause();
+          $('#page6-sound')[0].pause();
+          $('#page78-sound')[0].pause();
+          $('#page12-sound')[0].play();
+        }
+      })
+      $('.page3').mousemove(function(){
+        if( $('#sound-div').hasClass('sound-on') ){
+          $('#page12-sound')[0].pause();
+          $('#page6-sound')[0].pause();
+          $('#page78-sound')[0].pause();
+          $('#page3-sound')[0].play();
+        }
+      })
+      $('.page4, .page5').mousemove(function(){
+        if( $('#sound-div').hasClass('sound-on') ){
+          $('#page12-sound')[0].pause();
+          $('#page3-sound')[0].pause();
+          $('#page6-sound')[0].pause();
+          $('#page78-sound')[0].pause();
+        }
+      })
+      $('.page6').mousemove(function(){
+        if( $('#sound-div').hasClass('sound-on') ){
+          $('#page78-sound')[0].pause();
+          $('#page12-sound')[0].pause();
+          $('#page3-sound')[0].pause();
+          $('#page6-sound')[0].play();
+        }
+      })
+      $('.page7, .page8').mousemove(function(){
+        if( $('#sound-div').hasClass('sound-on') ){
+          $('#page12-sound')[0].pause();
+          $('#page3-sound')[0].pause();
+          $('#page6-sound')[0].pause();
+          $('#page78-sound')[0].play();
+        }
+      })
+    }
+
+    // Function to toggle sound on/off
+    function toggleSound() {
+      const soundDiv = $('#sound-div');
+
+      if (soundDiv.hasClass('sound-on')) {
+        soundDiv.addClass('sound-off').removeClass('sound-on');
+        pauseAllSounds();
+      } else {
+        soundDiv.addClass('sound-on').removeClass('sound-off');
+        playSoundsOnEvents();
+      }
+    }
+
+    // Click event handler for sound toggle
+    $('#sound-div').on('click', toggleSound);
+
+    // Initialize sound state based on class
+    if ($('.sound-on').length) {
+      playSoundsOnEvents();
+    }
 
     $('#column-dialogue1').hide();
     $('#column-dialogue2').hide();
@@ -196,6 +289,123 @@ jQuery(document).ready(function($){
       $('.story8content').css('position','relative');
       $('.page6').css('position', 'fixed');
     })
+
+    $('#act1-nav-btn').on('click', function(){
+      $('.page1').css('position','relative');
+      $('.page4').css('position','fixed');
+      $('.page5A').css('position','fixed');
+      $('.page6').css('position','fixed');
+      $('.page8').css('position','fixed');
+    })
+    $('#act2-nav-btn').on('click', function(){
+      $('.page1').css('position','fixed');
+      $('.page4').css('position','relative');
+      $('.page5A').css('position','fixed');
+      $('.page6').css('position','fixed');
+      $('.page8').css('position','fixed');
+    })
+    $('#yfc-nav-btn').on('click', function(){
+      $('.page1').css('position','fixed');
+      $('.page4').css('position','fixed');
+      $('.page5A').css('position','relative');
+      $('.page6').css('position','fixed');
+      $('.page8').css('position','fixed');
+    })
+    $('#stories-nav-btn').on('click', function(){
+      $('.page1').css('position','fixed');
+      $('.page4').css('position','fixed');
+      $('.page3').css('position','fixed');
+      $('.page5A').css('position','fixed');
+      $('.page6').css('position','relative');
+      $('.page8').css('position','fixed');
+    })
+    $('#act3-nav-btn').on('click', function(){
+      $('.page1').css('position','fixed');
+      $('.page4').css('position','fixed');
+      $('.page5A').css('position','fixed');
+      $('.page6').css('position','relative');
+      $('.page8').css('position','fixed');
+    })
+    $('#present-nav-btn').on('click', function(){
+      $('.page1').css('position','fixed');
+      $('.page4').css('position','fixed');
+      $('.page5A').css('position','fixed');
+      $('.page6').css('position','fixed');
+      $('.page8').css('position','relative');
+    })
+
+    $('#back_button2').on('click', function(){
+      $('.page1').css('position','relative');
+      $('.page2').css('position','fixed');
+      $('.page3').css('position','fixed');
+      $('.page4').css('position','fixed');
+      $('.page5').css('position','fixed');
+      $('.page6').css('position','fixed');
+      $('.page7').css('position','fixed');
+      $('.page8').css('position','fixed');
+    })
+    $('#back_button3').on('click', function(){
+      $('.page1').css('position','fixed');
+      $('.page2').css('position','relative');
+      $('.page3').css('position','fixed');
+      $('.page4').css('position','fixed');
+      $('.page5').css('position','fixed');
+      $('.page6').css('position','fixed');
+      $('.page7').css('position','fixed');
+      $('.page8').css('position','fixed');
+    })
+    $('#back_button4').on('click', function(){
+      $('.page1').css('position','fixed');
+      $('.page2').css('position','fixed');
+      $('.page3').css('position','relative');
+      $('.page4').css('position','fixed');
+      $('.page5').css('position','fixed');
+      $('.page6').css('position','fixed');
+      $('.page7').css('position','fixed');
+      $('.page8').css('position','fixed');
+    })
+    $('#back_button5').on('click', function(){
+      $('.page1').css('position','fixed');
+      $('.page2').css('position','fixed');
+      $('.page3').css('position','fixed');
+      $('.page4').css('position','relative');
+      $('.page5').css('position','fixed');
+      $('.page6').css('position','fixed');
+      $('.page7').css('position','fixed');
+      $('.page8').css('position','fixed');
+    })
+    $('#back_button6').on('click', function(){
+      $('.page1').css('position','fixed');
+      $('.page2').css('position','fixed');
+      $('.page3').css('position','fixed');
+      $('.page4').css('position','fixed');
+      $('.page5').css('position','relative');
+      $('.page6').css('position','fixed');
+      $('.page7').css('position','fixed');
+      $('.page8').css('position','fixed');
+    })
+    $('#back_button7').on('click', function(){
+      $('.page1').css('position','fixed');
+      $('.page2').css('position','fixed');
+      $('.page3').css('position','fixed');
+      $('.page4').css('position','fixed');
+      $('.page5').css('position','fixed');
+      $('.page6').css('position','relative');
+      $('.page7').css('position','fixed');
+      $('.page8').css('position','fixed');
+    })
+    $('#back_button8').on('click', function(){
+      $('.page1').css('position','fixed');
+      $('.page2').css('position','fixed');
+      $('.page3').css('position','fixed');
+      $('.page4').css('position','fixed');
+      $('.page5').css('position','fixed');
+      $('.page6').css('position','fixed');
+      $('.page7').css('position','relative');
+      $('.page8').css('position','fixed');
+    })
+
+
         // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything

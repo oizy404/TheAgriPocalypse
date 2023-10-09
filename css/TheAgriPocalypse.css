@@ -56,12 +56,26 @@ body, html{
     margin-top: 20px;
     width: 60%;
 }
-#nocheck{
+#act1-nav-btn:hover,
+#act2-nav-btn:hover,
+#yfc-nav-btn:hover,
+#stories-nav-btn:hover,
+#act3-nav-btn:hover,
+#present-nav-btn:hover
+{
+    transform: scale(1.1);
+}
+#nocheck, #withcheck{
     width: 35%;
 }
 #sound-text{
     width: 55%;
     margin-top: 5px;
+}
+#nocheck:hover, 
+#withcheck:hover
+#sound-text:hover{
+    transform: scale(1.1);
 }
 .sound-div{
     display: inline-flex;
@@ -71,9 +85,10 @@ body, html{
 	background-attachment: fixed;
 	height: 1932%;
     background-image: url("../img/loading_page/LoadingPage.gif");
-    background-size: auto;
+    background-size: 2107px 935px;
+    background-repeat: no-repeat;
     position: relative;
-    display: none;
+    /* display: none; */
 } 
 
 #audio-instruction {
@@ -220,7 +235,7 @@ img#scarcydialoguebox {
 }
 .page2{
 	background-attachment: fixed;
-	height: 143.7%;
+	height: 146.5%;
     background-image: url("../img/page2/pg2bganimation.gif");
     background-size: cover;
     position: fixed;
@@ -244,7 +259,7 @@ img#scarcydialoguebox {
     width: 300px;
 }
 .page3{
-    /* height: 6865px; */
+    height: 6910px;
     background-image: url("../img/page3/pg3bg.png");
     background-position: center;
     background-size: 2107px 7630px;
@@ -252,6 +267,9 @@ img#scarcydialoguebox {
     position: fixed;
     font-size: 28px;
     background-repeat: no-repeat;
+}
+.page3-content{
+    height: 0px;
 }
 .pg3-content1 , .pg3-content2, .pg3-content3, .pg3-content4, .pg3-content5, .pg3-content6, .pg3-content7{
     text-align: center;
@@ -565,6 +583,12 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     margin-left: 20px;
     margin-top: 20px;
     position: fixed;
+    z-index: 9999999;
+}
+.back_button-8{
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 .page6{
     height: 6500px;
@@ -575,7 +599,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     margin: 0px !important;
     font-size: 28px;
     text-align: center;
-    position: relative;
+    position: fixed;
 }
 .pg6-content1{
     height: 1090px;
@@ -619,7 +643,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
     max-width: 100%;
 }
 .pg6-content6{
-    height: 1090px;
+    height: 1050px;
 }
 .pg6-content6-inner{
     padding-top: 200px;
@@ -787,7 +811,7 @@ img#vertical:hover, img#organic:hover, img#regenerative:hover{
 }
 .page8{
 	background-attachment: fixed;
-    height: 928px;
+    height: 947px;
     background-image: url("../img/page8/InsidePlants.gif");
     background-size: cover;
     position: fixed;
@@ -874,3 +898,12 @@ img#story8:hover{
     position: fixed;
     background-repeat: no-repeat;
 } 
+#back_button2:hover,
+#back_button3:hover,
+#back_button4:hover,
+#back_button5:hover,
+#back_button6:hover,
+#back_button7:hover,
+#back_button8:hover{
+    transform: scale(1.1);
+}

@@ -8,24 +8,42 @@
     <title>The AgriPocalypse</title>
 </head>
 <body>
-    
+    <audio id="page12-sound">
+        <source src="sound/page1-2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="page3-sound">
+        <source src="sound/page3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="page6-sound">
+        <source src="sound/page6.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="page78-sound">
+        <source src="sound/page7-8.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="click-btn-sound">
+        <source src="sound/click-btn.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="carousel-btn-sound">
+        <source src="sound/carousel-btn.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="navigation">
         <div class="">
             <div class="acts">
                 <div class="acts-img">
-                    <a href=""><img src="img/navigation_elements/act1.png" alt="act1-nav-btn" id="act1-nav-btn"></a>
-                    <a href=""><img src="img/navigation_elements/act2.png" alt="act2-nav-btn" id="act2-nav-btn"></a>
-                    <a href=""><img src="img/navigation_elements/yfc.png" alt="yfc-nav-btn" id="yfc-nav-btn"></a>
-                    <a href=""><img src="img/navigation_elements/stories.png" alt="stories-nav-btn" id="stories-nav-btn"></a>
-                    <a href=""><img src="img/navigation_elements/act3.png" alt="act3-nav-btn" id="act3-nav-btn"></a>
-                    <a href=""><img src="img/navigation_elements/present.png" alt="present-nav-btn" id="present-nav-btn"></a>
+                    <a href="#act1"><img src="img/navigation_elements/act1.png" alt="act1-nav-btn" id="act1-nav-btn"></a>
+                    <a href="#pg4-content1"><img src="img/navigation_elements/act2.png" alt="act2-nav-btn" id="act2-nav-btn"></a>
+                    <a href="#page5-carousel-inner"><img src="img/navigation_elements/yfc.png" alt="yfc-nav-btn" id="yfc-nav-btn"></a>
+                    <a href="#pg6-content2"><img src="img/navigation_elements/stories.png" alt="stories-nav-btn" id="stories-nav-btn"></a>
+                    <a href="#pg6_act3"><img src="img/navigation_elements/act3.png" alt="act3-nav-btn" id="act3-nav-btn"></a>
+                    <a href="#page-8"><img src="img/navigation_elements/present.png" alt="present-nav-btn" id="present-nav-btn"></a>
                 </div>
             </div>
             <div class="nav-btns">
                 <div class="sound-div">
-                    <a href="">
-                        <img src="img/navigation_elements/nocheck.png" alt="nocheck" id="nocheck">
-                        <img src="img/navigation_elements/withcheck.png" alt="withcheck" id="withcheck" style="display: none;">
+                    <a id="sound-div" class="sound-on">
+                        <img src="img/navigation_elements/nocheck.png" alt="nocheck" id="nocheck" style="display: none;">
+                        <img src="img/navigation_elements/withcheck.png" alt="withcheck" id="withcheck">
                         <img src="img/navigation_elements/sound.png" alt="sound-text" id="sound-text">
                     </a>
                 </div>
@@ -106,7 +124,7 @@
 
             <div data-offset="5" class="row page2" id="page-2">
                 <div class="page2-content">
-                    <img src="img/buttons/back_button.png" class="back_button" alt="back_button" id="back_button2">
+                    <a href="#page1"><img src="img/buttons/back_button.png" class="back_button" alt="back_button" id="back_button2"></a>
                     <div class="pg2-content1">
                         <img src="img/page2/pg2dialogue.png" alt="pg2dialogue" id="pg2dialogue">
                     </div>
@@ -120,7 +138,7 @@
 
             <div data-offset="5" class="row page3 parallax">
                 <div class="col page3-content">
-                    <img src="img/buttons/back_button.png" class="back_button" alt="back_button" id="back_button3">
+                    <a href="#page2"><img src="img/buttons/back_button.png" class="back_button" alt="back_button" id="back_button3"></a>
                     <div class="row pg3-content1" id="pg3-content1">
                         <div class="col">
                             <p>
@@ -216,10 +234,10 @@
 
             <div data-offset="5" class="row page4 parallax" id="page-4">
                 <div class="col page4-content">
-                    <img src="img/buttons/back_button.png" class="back_button" alt="back_button" id="back_button4">
+                    <a href="#page3"><img src="img/buttons/back_button.png" class="back_button" alt="back_button" id="back_button4"></a>
                     <div class="row pg4-content1 justify-content-center" id="pg4-content1">
                         <div class="col-md-6 act2">
-                            <img src="img/page4/act2.png" alt="act2">
+                            <img src="img/page4/act2.png" alt="act2" id="act2">
                         </div>
                     </div>
                     <div class="row pg4-content2 justify-content-center">
@@ -439,7 +457,7 @@
             </div>
             <div data-offset="5" class="row page5" id="page-5">
                 <div class="col page5-content">
-                    <img src="img/buttons/back_button.png" class="back_button" alt="back_button" id="back_button5">
+                    <a href="#page4"><img src="img/buttons/back_button.png" class="back_button" alt="back_button" id="back_button5"></a>
                     <div class="row" id="page5-content">
                         <img src="img/page5/pg5dialoguebox.gif" alt="page5-dialoguebox" id="page5-dialoguebox">
                         <div class="page5-dialogue1">
@@ -513,6 +531,7 @@
                 </div>
             </div>
             <div data-offset="5" class="row page6 parallax" id="page-6">
+                <a href="#page5" style="text-align: left;"><img src="img/buttons/back_button.png" class="back_button" alt="back_button" id="back_button6"></a>
                 <div class="col page6-content">
                     <div class="row pg6-content1 justify-content-center">
                         <div class="col-md-9 pg6-content1-inner">
@@ -658,6 +677,7 @@
 
             <div class="row page7 justify-content-center" id="page-7">
                 <div class="col page7-content" id="">
+                    <a href="#page6"><img src="img/buttons/back_button.png" class="back_button" alt="back_button" id="back_button7"></a>
                     <div class="pg-content7-colum1"> 
                         <div id="pg7-column-dialogue1">
                             <img src="img/page1/pg1dialogueanimation.gif" alt="scarcydialoguebox" id="scarcydialoguebox" style="width: 100%">
@@ -685,6 +705,7 @@
             <div class="row page8 justify-content-center" id="page-8">
                 <div class="col page8-content">
                     <div class="aboutus">
+                        <a href="#page7"><img src="img/buttons/back_button.png" class="back_button-8" alt="back_button" id="back_button8"></a>
                         <a href="#aboutus-cont" id="aboutus-button"><img src="img/buttons/aboutus.png" alt="aboutus" id="aboutus"></a>
                     </div>
                     <div class="row page8-content-inner justify-content-center">
