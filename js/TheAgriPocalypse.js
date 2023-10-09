@@ -289,6 +289,42 @@ jQuery(document).ready(function($){
       $('.story8content').css('position','relative');
       $('.page6').css('position', 'fixed');
     })
+    
+
+    
+    $('#story1content-back-btn').on('click', function(){
+      $('.story1content').css('position','fixed');
+      $('.page6').css('position', 'relative');
+    })
+    $('#story2content-back-btn').on('click', function(){
+      $('.story2content').css('position','fixed');
+      $('.page6').css('position', 'relative');
+    })
+    $('#story3content-back-btn').on('click', function(){
+      $('.story3content').css('position','fixed');
+      $('.page6').css('position', 'relative');
+    })
+    $('#story4content-back-btn').on('click', function(){
+      $('.story4content').css('position','fixed');
+      $('.page6').css('position', 'relative');
+    })
+    $('#story5content-back-btn').on('click', function(){
+      $('.story5content').css('position','fixed');
+      $('.page6').css('position', 'relative');
+    })
+    $('#story6content-back-btn').on('click', function(){
+      $('.story6content').css('position','fixed');
+      $('.page6').css('position', 'relative');
+    })
+    $('#story7content-back-btn').on('click', function(){
+      $('.story7content').css('position','fixed');
+      $('.page6').css('position', 'relative');
+    })
+    $('#story8content-back-btn').on('click', function(){
+      $('.story8content').css('position','fixed');
+      $('.page6').css('position', 'relative');
+    })
+
 
     $('#act1-nav-btn').on('click', function(){
       $('.page1').css('position','relative');
